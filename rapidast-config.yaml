@@ -1,0 +1,8 @@
+config:
+  configVersion: 5
+application:
+  shortName: "oobttest"
+scanners:
+  generic:
+    results: "*stdout"
+    inline: "python3 /home/jenkins/rapidast/scanners/generic/tools/oobtkube.py -d 60 -p 6443 -i 10.0.59.129 -f /home/fedora/jenkins/jenkins-repo/dast/cr_example.yaml"
